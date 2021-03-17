@@ -6,11 +6,11 @@
 }
 
 html, body{
-    background-color:#672725;
+    background-color:#376D9B;
 }
 
 nav, footer, fieldset{
-    border: 2px solid #8D3431;
+    border: 2px solid #4687BF;
     margin: 1rem;
     border-radius: 10px;
     padding: 1rem;
@@ -20,9 +20,9 @@ fieldset{
     width: 40%;
     display:inline-block;
     height: 30px;
-    background-color: #B4413D;
+    background-color: #6BA0CD;
 }
 
 nav, footer{
-    background-color: #C95F5B;
+    background-color: #91B8DB;
 }
