@@ -1,28 +1,28 @@
 *{
     padding: 0;
     margin: 0;
-    color: #F2E29F;
+    color: black;
     text-align: center;
 }
 
 html, body{
-    background-color:#3EAD43;
+    background-color:#672725;
 }
 
-nav, section, footer, article, aside{
-    border: 2px solid #59C55E;
+nav, footer, fieldset{
+    border: 2px solid #8D3431;
     margin: 1rem;
     border-radius: 10px;
     padding: 1rem;
 }
 
-aside, article{
+fieldset{
     width: 40%;
     display:inline-block;
-    height: 300px;
-    background-color: #7ED382;
+    height: 30px;
+    background-color: #B4413D;
 }
 
-nav, section, footer{
-    background-color: #A3E1A6;
+nav, footer{
+    background-color: #C95F5B;
 }
