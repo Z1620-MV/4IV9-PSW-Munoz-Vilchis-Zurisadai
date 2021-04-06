@@ -1,0 +1,40 @@
+.td_up{
+    align-items: left;
+    justify-content: left;
+    width: 200;
+}
+
+.td_down{
+    align-items: center;
+    justify-content: center;
+    width: 200;
+}
+
+.input_text{
+    size: 12;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 10px;
+    color: solid black(71, 66, 66);
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+*{
+    background-color:#A33937;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+footer{
+    font-size: 20px;
+    background-color: solid #da2735;
+    border: 2px solid #ebded5;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 10%;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+}

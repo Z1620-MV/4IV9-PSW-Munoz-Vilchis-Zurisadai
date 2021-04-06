@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 6</title>
+    <link rel="stylesheet" href="./css/problema6.css">
+    <script src="./js/problema6.js" ></script>
+
+</head>
+<body>
+    <p>
+        Realizar un algoritmo que calcule la edad de una persona.
+    </p>
+    <form method="get" 
+    name="formulario" action="problema1.html">
+        <table align="center" border="1" >
+            <tr>
+                <td class="td_up" >Introduzca su año de nacimiento</td>
+                <td class="td_down" ><input type="date" name="fecha"
+                    onkeypress="return validarn(event)" onkeypress="return validate_fecha(fecha)" onkeypress="return isValidDate(day,month,year)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Calcular Edad" onclick="calcularEdad()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >------------------------------></td>
+                <td class="td_down" ><input type="text" name="sueldoti" id="cantidadti"
+                    readonly="readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down" ><input type="button" name="borrard" 
+                    value="Borrar"
+                    onclick="borrar()"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+
+    <footer><a href="menu.html">Regresar</a></footer>
+    
+
+    
+</body>
+</html>

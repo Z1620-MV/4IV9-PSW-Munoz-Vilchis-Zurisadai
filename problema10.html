@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 10</title>
+    <link rel="stylesheet" href="./css/problema10.css">
+    <script src="./js/problema10.js" ></script>
+
+</head>
+<body>
+    <p align="justify">
+        Calcular la utilidad que un trabajador recibe en un reparto anual de utilidades si éste se le asigna como un 
+        porcentaje de su salario mensual que depende de su antigüedad en la empresa de acuerdo con la sig. Tabla:
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tiempo</th>
+                    <th>Utilidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Menos de un año</td>
+                    <td>5% del salario </td>
+                </tr>
+                <tr>
+                    <td>1 año o más y menos de 2 años</td>
+                    <td>7% del salario</td>
+                </tr>
+                <tr>
+                    <td>2 años o más y menos de 5 años</td>
+                    <td>10% del salario</td>
+                </tr>
+                <tr>
+                    <td>5 años o más y menos de 10 años</td>
+                    <td>15% del salario</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>10 años o más</td>
+                    <td>20% del salario</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+    </p>
+    <form method="get" 
+    name="formulario" action="problema1.html">
+        <table align="center" border="1" >
+            <tr>
+                <td class="td_up" >Introduzca cuántos meses ha trabajado en la empresa:</td>
+                <td class="td_down" ><input type="text" name="cantidad"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Calcular" onclick="sueldo()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Su utilidad es de:</td>
+                <td class="td_down" ><input type="text" name="sueldoti" id="cantidadti"
+                    readonly="readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down" ><input type="button" name="borrard" 
+                    value="Borrar"
+                    onclick="borrar()"></td>
+            </tr>
+        </table>
+    </form>
+    
+    <footer><a href="menu.html">Regresar</a></footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <link rel="stylesheet" href="./css/problema4.css">
+    <script src="./js/problema4.js" ></script>
+
+</head>
+<body>
+    <p>
+        Un alumno desea saber cuál es será su calificación final en la materia de Algoritmos. 
+        Dicha calificación se compone de los siguientes porcentajes:
+        <br>
+        55% del promedio de sus tres calificaciones parciales.
+        <br>
+        30% de la calificación del examen final.
+        <br>
+        15% de la calificación de un trabajo final. 
+    </p>
+    <form method="get" 
+    name="formulario" action="problema1.html">
+        <table align="center" border="1" >
+            <tr>
+                <td class="td_up" >Introduzca el promedio de sus tres calificaciones parciales:</td>
+                <td class="td_down" ><input type="text" name="cantidad"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduzca la calificación de su examen final:</td>
+                <td class="td_down" ><input type="text" name="cantidad2"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduzca la calificación de su trabajo final:</td>
+                <td class="td_down" ><input type="text" name="cantidad3"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Operación" onclick="operacion()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Su calificación final es de:</td>
+                <td class="td_down" ><input type="text" name="sueldoti" id="cantidadti"
+                    readonly="readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down" ><input type="button" name="borrard" 
+                    value="Borrar"
+                    onclick="borrar()"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+
+    <footer><a href="menu.html">Regresar</a></footer>
+    
+</body>
+</html>

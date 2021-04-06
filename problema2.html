@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="./css/problema2.css">
+    <script src="./js/problema2.js" ></script>
+
+</head>
+<body>
+    <p>
+        Un vendedor recibe un sueldo base más un 10% extra por comisión de sus ventas, el vendedor desea saber
+        cuánto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el mes y el total que 
+        recibirá en el mes tomando en cuenta su sueldo base y comisiones.
+    </p>
+    <form method="get" 
+    name="formulario" action="problema1.html">
+        <table align="center" border="1" >
+            <tr>
+                <td class="td_up" >Introduzca la cantidad de su primera venta:</td>
+                <td class="td_down" ><input type="text" name="cantidad"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduzca la cantidad de su segunda venta:</td>
+                <td class="td_down" ><input type="text" name="cantidad2"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduzca la cantidad de su tercera venta:</td>
+                <td class="td_down" ><input type="text" name="cantidad3"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Operación" onclick="operacion()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >La ganancia de sus tres ventas es de:</td>
+                <td class="td_down" ><input type="text" name="sueldoti" id="cantidadti"
+                    readonly="readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td class="td_up" >Su sueldo total (contanto su sueldo base) es de:</td>
+                <td class="td_down" ><input type="text" name="sueldoti2" id="cantidadti2"
+                    readonly="readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down" ><input type="button" name="borrard" 
+                    value="Borrar"
+                    onclick="borrar()"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+
+    <footer><a href="menu.html">Regresar</a></footer>
+    
+</body>
+</html>

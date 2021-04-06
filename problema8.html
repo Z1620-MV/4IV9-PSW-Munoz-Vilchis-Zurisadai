@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 8</title>
+    <link rel="stylesheet" href="./css/problema8.css">
+    <script src="./js/problema8.js" ></script>
+
+</head>
+<body>
+    <p>
+        Leer tres números diferentes e imprimir el número mayor de los tres.  
+    </p>
+    <form method="get" 
+    name="formulario" action="problema1.html">
+        <table align="center" border="1" >
+            <tr>
+                <td class="td_up" >Introduzca el primer número:</td>
+                <td class="td_down" ><input type="text" name="cantidad"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduzca el segundo número:</td>
+                <td class="td_down" ><input type="text" name="cantidad2"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduzca el tercer número:</td>
+                <td class="td_down" ><input type="text" name="cantidad3"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Operación" onclick="operacion()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >El mayor es:</td>
+                <td class="td_down" ><input type="text" name="sueldoti" id="cantidadti"
+                    readonly="readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down" ><input type="button" name="borrard" 
+                    value="Borrar"
+                    onclick="borrar()"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+
+    <footer><a href="menu.html">Regresar</a></footer>
+    
+</body>
+</html>

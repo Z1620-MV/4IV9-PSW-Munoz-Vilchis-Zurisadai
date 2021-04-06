@@ -26,3 +26,15 @@ fieldset{
 nav, footer{
     background-color: #DDAB98;
 }
+
+p{
+    font-size: 20px;
+    background-color: plum;
+    border: 2px solid #ebded5;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 10%;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+}
